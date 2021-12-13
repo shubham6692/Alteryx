@@ -1,0 +1,652 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="67" y="745" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="6" />
+          <Fields>
+            <Field name="CustomerID" />
+            <Field name="FirstName" />
+            <Field name="LastName" />
+            <Field name="Gender" />
+            <Field name="JoinDate" />
+            <Field name="Region" />
+            <Field name="Score" />
+          </Fields>
+          <Data>
+            <r>
+              <c>49</c>
+              <c>Thomas</c>
+              <c>Edison</c>
+              <c>M</c>
+              <c>2014-08-21</c>
+              <c>South</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>456</c>
+              <c>galileo</c>
+              <c />
+              <c>M</c>
+              <c>2014-04-01</c>
+              <c>South</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>31</c>
+              <c>Benjamin</c>
+              <c>Franklin</c>
+              <c>M</c>
+              <c>2014-12-21</c>
+              <c>Midwest</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>5</c>
+              <c>Dorothy</c>
+              <c>Franklin</c>
+              <c>F</c>
+              <c>2014-10-01</c>
+              <c>Northeast</c>
+              <c>22</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>Louis</c>
+              <c>Pasteur</c>
+              <c>M</c>
+              <c>2013-09-06</c>
+              <c>West</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>'Tim'</c>
+              <c>Berners-Lee</c>
+              <c>M</c>
+              <c>2014-01-26</c>
+              <c>Midwest</c>
+              <c>a</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="79" y="1237" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>places.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="C:\Users\Leah Bucalon\Desktop\places.xlsx" Package="False" IsMacro="False" IsOutput="False" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store Num" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Address" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="ZIP" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Lat" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Lon" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="County " size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Region" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Type" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Store Number" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Total Sales" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Credit Sales" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Total Customers" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="175" y="745" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="FirstName" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>FirstName - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings>
+        <Position x="187" y="1237" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Store Num","Address","City","State","ZIP","Lat","Lon","County ","Region","Type","Store Number","Total Sales","Credit Sales","Total Customers"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="_externals\1\Cleanse.yxmc" Package="True" IsMacro="True" IsOutput="False" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="_externals\1\Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="66" y="384" width="313" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Data Cleansing Tool</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="91" y="433" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">_externals\2\places.xlsx|||`Sheet1$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>places.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Store Num" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Address" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="City" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="State" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="ZIP" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Lat" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Lon" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="County " size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Region" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Type" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Store Number" size="255" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Total Sales" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Credit Sales" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Total Customers" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\2\places.xlsx|||`Sheet1$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings>
+            <Position x="187" y="433" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Store Num","Address","City","State","ZIP","Lat","Lon","County ","Region","Type","Store Number","Total Sales","Credit Sales","Total Customers"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">True</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit>
+                <Dependency Path="_externals\1\Cleanse.yxmc" Package="True" IsMacro="True" IsOutput="False" IsAlias="False" />
+              </Implicit>
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="_externals\1\Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="295" y="433" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\sagarw39\AppData\Local\Temp\Engine_23484_a3a34b3a92334c87988ba9d31892211f_\Engine_2492_9b16d7e106d3476d8dbd8a3cef19efe3_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="66" y="228" width="289" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Sort Tool</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="91" y="277" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="CustomerID" />
+                <Field name="FirstName" />
+                <Field name="LastName" />
+                <Field name="Gender" />
+                <Field name="JoinDate" />
+                <Field name="Region" />
+                <Field name="Score" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>49</c>
+                  <c>Thomas</c>
+                  <c>Edison</c>
+                  <c>M</c>
+                  <c>2014-08-21</c>
+                  <c>South</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>456</c>
+                  <c>galileo</c>
+                  <c />
+                  <c>M</c>
+                  <c>2014-04-01</c>
+                  <c>South</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>31</c>
+                  <c>Benjamin</c>
+                  <c>Franklin</c>
+                  <c>M</c>
+                  <c>2014-12-21</c>
+                  <c>Midwest</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>Dorothy</c>
+                  <c>Franklin</c>
+                  <c>F</c>
+                  <c>2014-10-01</c>
+                  <c>Northeast</c>
+                  <c>22</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>Louis</c>
+                  <c>Pasteur</c>
+                  <c>M</c>
+                  <c>2013-09-06</c>
+                  <c>West</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>'Tim'</c>
+                  <c>Berners-Lee</c>
+                  <c>M</c>
+                  <c>2014-01-26</c>
+                  <c>Midwest</c>
+                  <c>a</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="187" y="277" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="CustomerID" order="Ascending" />
+                <Field field="FirstName" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CustomerID - Ascending
+FirstName - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="271" y="277" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\sagarw39\AppData\Local\Temp\Engine_23484_a3a34b3a92334c87988ba9d31892211f_\Engine_2492_2757a56d9d864034bd3c3c5b07686b5a_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="60" width="313" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Select Tool</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="109" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">_externals\3\WA_Fn-UseC_-Telco-Customer-Churn.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>WA_Fn-UseC_-Telco-Customer-Churn.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="customerID" size="254" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\3\WA_Fn-UseC_-Telco-Customer-Churn.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\3\WA_Fn-UseC_-Telco-Customer-Churn.csv" type="V_String" />
+                <Field name="SeniorCitizen" size="254" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\3\WA_Fn-UseC_-Telco-Customer-Churn.csv" type="V_String" />
+                <Field name="Partner" size="254" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\3\WA_Fn-UseC_-Telco-Customer-Churn.csv" type="V_String" />
+                <Field name="Dependents" size="254" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\3\WA_Fn-UseC_-Telco-Customer-Churn.csv" type="V_String" />
+                <Field name="tenure" size="254" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\3\WA_Fn-UseC_-Telco-Customer-Churn.csv" type="V_String" />
+                <Field name="PhoneService" size="254" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\3\WA_Fn-UseC_-Telco-Customer-Churn.csv" type="V_String" />
+                <Field name="InternetService" size="254" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\3\WA_Fn-UseC_-Telco-Customer-Churn.csv" type="V_String" />
+                <Field name="Contract" size="254" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\3\WA_Fn-UseC_-Telco-Customer-Churn.csv" type="V_String" />
+                <Field name="Payment_PB" size="254" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\3\WA_Fn-UseC_-Telco-Customer-Churn.csv" type="V_String" />
+                <Field name="PaymentMethod" size="254" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\3\WA_Fn-UseC_-Telco-Customer-Churn.csv" type="V_String" />
+                <Field name="M_Charges" size="254" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\3\WA_Fn-UseC_-Telco-Customer-Churn.csv" type="V_String" />
+                <Field name="TotalCharges" size="254" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\3\WA_Fn-UseC_-Telco-Customer-Churn.csv" type="V_String" />
+                <Field name="Churn" size="254" source="File: C:\Users\sagarw39\Alteryx\1-4-Formatting-your-data\_externals\3\WA_Fn-UseC_-Telco-Customer-Churn.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="163" y="109" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="gender" selected="True" size="6" />
+                <SelectField field="SeniorCitizen" selected="True" type="Bool" size="1" />
+                <SelectField field="tenure" selected="True" type="Int16" size="2" />
+                <SelectField field="PhoneService" selected="False" />
+                <SelectField field="Payment_PB" selected="True" rename="Paperless_Billing" />
+                <SelectField field="M_Charges" selected="True" rename="Monthly_Charges" />
+                <SelectField field="Churn" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="283" y="109" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\sagarw39\AppData\Local\Temp\Engine_23484_a3a34b3a92334c87988ba9d31892211f_\Engine_2492_b8794986bc584a24a50c84d78147ded7_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="14" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output26" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Formatting-your-data</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="d084e1e1-c498-485a-8494-777f8b3e5a57" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="d084e1e1-c498-485a-8494-777f8b3e5a57" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

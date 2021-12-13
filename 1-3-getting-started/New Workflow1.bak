@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="2020.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">_externals\1\uszips.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>uszips.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="zip" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="lat" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="lng" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="city" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="state_id" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="state_name" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="zcta" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="parent_zcta" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="population" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="density" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="county_fips" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="county_name" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="county_weights" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="county_names_all" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="county_fips_all" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="imprecise" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="military" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="timezone" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="digits" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="390" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\LEAHBU~1\AppData\Local\Temp\Engine_22964_9d58895c2949416cafc29724e14dd07d_\Engine_8152_a0e4ff496c4c47b0b46bf9464b1b1b61_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="162" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>Contains(ToString([zip]),"Kansas",1) || Contains(ToString([lat]),"Kansas",1) || Contains(ToString([lng]),"Kansas",1) || Contains([city],"Kansas",1) || Contains([state_id],"Kansas",1) || Contains([state_name],"Kansas",1) || Contains([zcta],"Kansas",1) || Contains(ToString([parent_zcta]),"Kansas",1) || Contains(ToString([population]),"Kansas",1) || Contains(ToString([density]),"Kansas",1) || Contains(ToString([county_fips]),"Kansas",1) || Contains([county_name],"Kansas",1) || Contains([county_weights],"Kansas",1) || Contains([county_names_all],"Kansas",1) || Contains([county_fips_all],"Kansas",1) || Contains([imprecise],"Kansas",1) || Contains([military],"Kansas",1) || Contains([timezone],"Kansas",1) || Contains([digits],"Kansas",1)</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="zip" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="lat" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="lng" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="city" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="state_id" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="state_name" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="zcta" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="parent_zcta" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="population" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="density" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="county_fips" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="county_name" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="county_weights" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="county_names_all" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="county_fips_all" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="imprecise" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="military" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="timezone" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="digits" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="zip" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="lat" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="lng" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="city" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="state_id" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="state_name" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="zcta" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="parent_zcta" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="population" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="density" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="county_fips" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="county_name" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="county_weights" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="county_names_all" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="county_fips_all" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="imprecise" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="military" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="timezone" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="digits" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="270" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="state_id" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>state_id - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="zip" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="lat" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="lng" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="city" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="state_id" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="state_name" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="zcta" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="parent_zcta" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="population" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="density" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="county_fips" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="county_name" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="county_weights" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="county_names_all" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="county_fips_all" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="imprecise" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="military" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="timezone" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="digits" size="255" source="File: C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\uszips.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="state_id" order="Descending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="414" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="8">C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\zip.xls|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PostSQL />
+            <PreSQL />
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Suffix</MultiFileType>
+          <MultiFileField>digits</MultiFileField>
+          <KeepField value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>zip.xls
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path="C:\Users\Leah Bucalon\Documents\ARCHIVES - WORK\zip.xls" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>New Workflow1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
